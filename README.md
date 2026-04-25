@@ -166,22 +166,18 @@ Used to detect the **first opportunity** to achieve returns
 ipo-time-to-return-nse/
 │
 ├── data/
-│   ├── raw/                  # Daily NSE CSV files
-│   ├── processed/            # Consolidated datasets
+│   ├── NSE_IPO_Extract.xlsx
 │
 ├── input/
 │   ├── Company Codes.xlsx
-│   ├── NSE_IPO_Extract.xlsx
 │
 ├── output/
-│   ├── nse_2020_21_22_23_24.pkl
 │   ├── output.xlsx
 │
 ├── scripts/
-│   ├── 1_extract_company_codes.py
-│   ├── 2_download_nse_data.py
-│   ├── 3_combine_and_pickle.py
-│   ├── 4_ipo_analysis.py
+│   ├── 0. NSE_Company codes.py
+│   ├── 1. Read Stock data to pickle.py
+│   ├── 2. Days to reach certain percent.py
 │
 └── README.md
 ```
