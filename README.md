@@ -8,6 +8,7 @@ IPO investments are often driven by hype, but there is very little structured an
 
 This project answers that using raw market data from the National Stock Exchange (NSE).
 
+
 ---
 
 ## What this project does
@@ -40,6 +41,12 @@ Raw daily trading data downloaded from NSE archives (2020–2024)
 
 👉 No third-party APIs used
 
+Link: https://archives.nseindia.com/products/content/sec_bhavdata_full_29122023.csv
+Just change the date at the end of the URL. Make sure it is not a holiday.
+
+Use this file and the sheets in it. Refreshing the script in Excel would yield results based on the added dates.
+/data/NSE Stock Data 2024 - Github.xlsx
+
 ---
 
 ### 2. IPO Dataset
@@ -52,6 +59,8 @@ Extracted from NSE IPO portal:
 * Date of Listing
 * Price Band
 
+Link: https://www.nseindia.com/market-data/all-upcoming-issues-ipo
+
 ---
 
 ## Project Pipeline
@@ -60,6 +69,10 @@ Extracted from NSE IPO portal:
 
 * Scraped all NSE-listed company symbols
 * Stored in `Company Codes.xlsx`
+
+Link: https://money.rediff.com/companies/nseall/
+
+Or use /scripts/0.NSE_Company code.py
 
 ---
 
